@@ -1,0 +1,442 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap');
+
+* {
+    margin: 0%;
+    padding: 0%;
+    font-family: 'Poppins', sans-serif;
+}
+
+body {
+    background: #e4e6eb;
+}
+
+header {
+    background-color: transparent;
+    padding: 10px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+nav img {
+    width: 30px;
+    margin-right: 10px;
+}
+
+main section .content {
+    margin-top: 100px;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+}
+
+.content img {
+    max-width: 50%;
+    height: 50%;
+    margin-right: 20px;
+    border-radius: 10px;
+}
+
+.text {
+    margin-left: 25px;
+    flex-grow: 1;
+}
+
+.text h2 {
+    font-weight: lighter;
+    font-size: 4rem;
+}
+
+.text p {
+    margin-top: 15px;
+    font-size: 2rem;
+}
+
+.btn button {
+    width: 120px;
+    height: 50px;
+    margin-top: 15px;
+    background: #e4e6eb;
+    border: solid black 2px;
+    border-radius: 11px;
+}
+
+.content2 {
+    margin-top: 200px;
+}
+
+.content2 p {
+    text-align: center;
+}
+
+#services {
+    margin-top: 200px;
+}
+
+.images {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; /* Align items to the start of the container */
+}
+
+.image {
+    width: 400px;
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    display: inline-block;
+    flex-direction: column;
+    align-items: center;
+    margin: 0 10px;
+    text-align: center;
+    position: relative; /* Add relative positioning to the container */
+}
+
+.image img {
+    width: 100%;
+    height: auto; /* Set height to auto to maintain aspect ratio */
+    border-radius: 10px;
+}
+
+.image h1,
+.image p {
+    margin: 10px 0; /* Add margin for better spacing */
+}
+
+.image button {
+    margin-top: 10px;
+    text-decoration: none; /* Remove text decoration */
+    cursor: pointer;
+}
+
+.coding-options {
+    display: none; /* Initially hide coding options */
+    position: absolute;
+    bottom: 0;
+    left: 50%; /* Center the coding options horizontally */
+    transform: translateX(-50%);
+    background-color: rgba(255, 255, 255, 0.9); /* Semi-transparent background */
+    padding: 10px;
+    border-radius: 10px;
+    text-align: left; /* Align text to the left */
+}
+
+#video-slideshow {
+    margin-top: 400px;
+    width: 80%;
+    height: 100vh; /* or any desired height */
+    overflow: hidden;
+    margin: 0 auto; /* center the section horizontally */
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid #333; /* border style */
+    border-radius: 10px; /* rounded border */
+}
+
+.slideshow {
+    width: 300%; /* triple the width to accommodate all videos */
+    height: 100%;
+}
+
+.slideshow video {
+    flex: 1;
+    width: 100%;
+    height: 100%;
+    object-fit: cover; /* ensure the video covers the entire space */
+}
+
+#contact {
+    background: #f9f9f9;
+    padding: 50px 0;
+    text-align: center;
+}
+
+#contact h2 {
+    color: #333;
+    margin-bottom: 30px;
+}
+
+.form-group {
+    margin-bottom: 20px;
+    text-align: left;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 5px;
+}
+
+.form-group input,
+.form-group textarea {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 1rem;
+}
+
+.form-group textarea {
+    resize: vertical;
+}
+
+.form-group button {
+    background-color: #333;
+    color: #fff;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 5px;
+    cursor: pointer;
+    font-size: 1rem;
+}
+
+.form-group button:hover {
+    background-color: #555;
+}
+
+/* New CSS Rules */
+
+/* Add some spacing between sections */
+section {
+    margin-bottom: 50px;
+}
+
+/* Style the section title */
+h1 {
+    font-size: 2.5rem;
+    color: #333;
+    margin-bottom: 20px;
+}
+
+/* Style the image captions */
+.image h1 {
+    font-size: 1.5rem;
+    color: #333;
+    margin-top: 15px;
+}
+
+/* Style the image descriptions */
+.image p {
+    font-size: 1.2rem;
+    color: #666;
+}
+
+/* Style the "Read More" button */
+.image button {
+    width: 150px;
+    height: 50px;
+    background-color: #333;
+    color: #fff;
+    border: none;
+    border-radius: 25px;
+    font-size: 1rem;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+}
+
+.image button:hover {
+    background-color: #555;
+}
+
+/* Style the coding options */
+.coding-options {
+    background-color: rgba(255, 255, 255, 0.9);
+    padding: 15px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    margin-top: 20px;
+    font-size: 1.1rem;
+    line-height: 1.5;
+    color: #333;
+}
+
+/* Style the list items inside coding options */
+.coding-options ul {
+    list-style: none;
+    list-style-type: disc;
+    margin-left: 20px;
+}
+
+/* Position the coding options above the button */
+.coding-options {
+    /* Other styles remain the same */
+    position: absolute;
+    top: calc(100% + 10px); /* Position it just above the button */
+}
+
+/* Fade-in Animation */
+@keyframes fade-in {
+    from {
+      opacity: 0;
+    }
+    to {
+      opacity: 1;
+    }
+}
+  
+.section {
+    opacity: 0; /* Initially hidden */
+    animation: fade-in 1s ease forwards; /* Apply fade-in animation */
+}
+  
+/* Hover Effects */
+.btn {
+    transition: transform 0.3s ease;
+}
+  
+.btn:hover {
+    cursor: hand;
+    transform: scale(1.1);
+}
+  
+/* Slide-in Animation */
+@keyframes slide-in {
+    from {
+      transform: translateY(50px);
+      opacity: 0;
+    }
+    to {
+      transform: translateY(0);
+      opacity: 1;
+    }
+}
+  
+.image {
+    opacity: 0; /* Initially hidden */
+    animation: slide-in 0.5s ease forwards;
+}
+  
+/* Apply animation to specific elements */
+.image:nth-child(odd) {
+    animation-delay: 0.2s; /* Add delay for alternate images */
+}
+
+.right{
+    height: 200px;
+    float: right;
+}
+
+.center {
+    display: flex;
+    justify-content: center;
+    align-items: flex-start; 
+    max-width: 1200px;
+    margin: 0 auto; 
+}
+
+.service {
+    background-color: #f9f9f9;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0px 0px 20px rgba(0, 0, 0, 0.1);
+    transition: all 0.3s ease;
+    display: none; 
+}
+
+.service.active {
+    display: block; 
+}
+
+.service h2 {
+    color: #333;
+    font-weight: bold;
+}
+
+.service ul li {
+    color: #666;
+    font-size: 16px;
+    line-height: 1.6;
+    transition: color 0.3s ease;
+}
+
+.service ul li:hover {
+    color: #000;
+}
+
+
+
+
+.service:hover {
+    transform: translateY(-5px);
+    box-shadow: 0px 0px 30px rgba(0, 0, 0, 0.2);
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+}
+
+.contact-details p {
+    margin-right: 20px; 
+}
+
+.social-links {
+    display: flex;
+}
+
+.social-links a {
+    margin-right: 10px; 
+}
+
+.social-links img, .contact-details img {
+    width: 30px; 
+    height: 30px;
+}
+
+
+.logo {
+    width: 300px;
+    margin-right: 20px;
+}
+
+.phone-number a{
+    text-decoration: none;
+    color: black;
+}
+
+.footer-content {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap; /* Allow content to wrap */
+    padding: 20px;
+}
+
+.contact-details {
+    display: flex;
+    align-items: center;
+    margin-top: 10px; /* Add some space between logo and contact details */
+}
+
+.contact-details img {
+    width: 30px; /* Adjust size of telephone symbol */
+    height: 30px;
+    margin-right: 10px; /* Add some space between telephone symbol and phone number */
+}
+
+.phone-number {
+    margin: 0; /* Reset margin */
+}
+
+.social-links {
+    display: flex;
+    margin-top: 10px; /* Add some space between phone number and social links */
+}
+
+.social-links a {
+    margin-right: 10px; /* Add space between social media icons */
+}
+
+.social-links img {
+    width: 30px; /* Adjust size of social media icons */
+    height: 30px;
+}
